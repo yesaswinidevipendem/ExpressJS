@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <table border="1px">
+      <tr>
+        <th>Post title</th>
+        <th>Message</th>
+      </tr>
+      <% post.forEach((postss)=>{ %>
+        <tr>
+          <td><%=postss.title%></td>
+          <td><%=postss.message%></td>
+        </tr>
+      <% }) %>
+    </table>
+    <!--<p>Welcome to <%= title %></p> -->
+  </body>
+</html>
